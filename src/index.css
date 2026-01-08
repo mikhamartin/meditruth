@@ -1,0 +1,91 @@
+:root {
+  --color-primary: #00509E;
+  /* Deep Blue */
+  --color-accent: #D62828;
+  /* Rich Red */
+  --color-caution: #F59E0B;
+  /* Amber for caution */
+  --color-safe: #10B981;
+  /* Emerald for safe */
+  --color-white: #FFFFFF;
+  --color-bg-light: #F8FAFC;
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --radii-card: 16px;
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-light);
+  color: #1E293B;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: font-size 0.2s ease;
+}
+
+/* Large Text Accessibility Mode */
+body.large-text {
+  font-size: 1.25rem !important;
+}
+
+body.large-text h1 {
+  font-size: 2.5rem;
+}
+
+body.large-text h2 {
+  font-size: 2.2rem;
+}
+
+body.large-text h3 {
+  font-size: 1.8rem;
+}
+
+body.large-text p,
+body.large-text input,
+body.large-text button,
+body.large-text a,
+body.large-text span,
+body.large-text label {
+  font-size: 1.3rem !important;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
